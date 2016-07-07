@@ -1,0 +1,21 @@
+Nome Seminario: JAVA
+Descrizione Seminario: Java for dummies
+Location Seminario: Manno
+Posti disponibili Seminario: 5
+Iscrizione di Gennaro Errico avvenuta con successo!
+Posti disponibili Seminario: 4
+Iscrizione di Stefano Coluccia avvenuta con successo!
+Posti disponibili Seminario: 3
+Iscrizione di Pippo Baudo avvenuta con successo!
+Posti disponibili Seminario: 2
+Iscrizione di Diego Maradona avvenuta con successo!
+Posti disponibili Seminario: 1
+Iscrizione di Antonio Conte avvenuta con successo!
+Posti disponibili Seminario: 0
+Iscrizione di Alina Kobler NON POSSIBILE! Posti disponibili terminati!
+Posti disponibili Seminario: 0
+Lista partecipanti Seminario: Gennaro Errico
+Lista partecipanti Seminario: Stefano Coluccia
+Lista partecipanti Seminario: Pippo Baudo
+Lista partecipanti Seminario: Diego Maradona
+Lista partecipanti Seminario: Antonio Conte
