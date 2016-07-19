@@ -70,6 +70,18 @@ public class Gui extends JFrame implements ActionListener {
         lastButton.addActionListener(this);
         searchButton.addActionListener(this);
         
+        //setMnemonics
+        loadButton.setMnemonic('L');
+        saveButton.setMnemonic('S');
+        searchButton.setMnemonic('W');
+        lastButton.setMnemonic('a');
+        
+        //setToolTipText
+        loadButton.setToolTipText("Open the list of partecipants.");
+        saveButton.setToolTipText("Save the list of partecipants.");
+        searchButton.setToolTipText("Choose a random announcer from the loaded list.");
+        lastButton.setToolTipText("Load the last list opened of partecipants.");        
+        
         buttonPanel.add(loadButton);
         buttonPanel.add(saveButton);
         buttonPanel.add(searchButton);
@@ -197,12 +209,8 @@ public class Gui extends JFrame implements ActionListener {
 		if (file.isFile()) {
 		    		    
 		    String str1 = file.getName().toLowerCase();
-     		if (!str1.contains(".")) 
-         	    System.out.println("File Name=" + str1); 
-         	else {
-         	    str1 = str1.substring(0, str1.lastIndexOf("."));
-         	    // Because extension is always after the last '.'
-         	    System.out.println("File Name=" + str1);
+     		if (str1.contains(".")) {
+     			str1 = str1.substring(0, str1.lastIndexOf("."));         	
          	}
      		
      		nameMapping.put( str1,file.getPath());

@@ -23,8 +23,7 @@ public class MyJFileChooser {
         fileChooser.setSelectedFile(new File(fileOpened));
         int resultOpen = fileChooser.showOpenDialog(null);
         if (resultOpen == JOptionPane.OK_OPTION ){
-        	
-  
+    	  
         File fileName = fileChooser.getSelectedFile();
         String filen = fileName.toString();
   
@@ -46,6 +45,7 @@ public class MyJFileChooser {
         fileChooser.setFileSelectionMode(JFileChooser.APPROVE_OPTION);
         fileChooser.setSelectedFile(new File(fileOpened));
         int resultSave = fileChooser.showDialog(null, "Salva File");
+                        
         if (resultSave == JOptionPane.OK_OPTION){
         	
 
