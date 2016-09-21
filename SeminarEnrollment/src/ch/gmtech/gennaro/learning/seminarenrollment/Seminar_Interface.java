@@ -4,8 +4,7 @@ import java.util.ArrayList;
 
 public interface Seminar_Interface {
 	
-	public String getName();
-	public String getDescrition();
+	public Course getCourse();
 	public String getLocation();
 	public int getSeatsLeft();
 	public ArrayList<String> getStudentList();

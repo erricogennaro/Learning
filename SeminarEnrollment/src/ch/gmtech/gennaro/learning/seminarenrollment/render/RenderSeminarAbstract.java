@@ -16,10 +16,10 @@ public abstract class RenderSeminarAbstract implements Render_Interface {
 	@Override
 	public String renderHeader() {
 		String header = "";
-		header += "Nome del Seminario: " + seminar.getName() + "\n" ;
-		header += "Descrizione: " + seminar.getDescrition() + "\n" ;
+		header += "Nome del Seminario: " + seminar.getCourse().getName() + "\n" ;
+		header += "Descrizione: " + seminar.getCourse().getDescription() + "\n" ;
 		header += "Luogo: " + seminar.getLocation() + "\n" ;
-		header += "Data inizio: " + seminar.getStartDate().toString() + "\n" ;
+		header += "Data inizio: " + seminar.getCourse().getStartDate().toString() + "\n" ;
 		header += "Posti rimanenti: " + String.valueOf(seminar.getSeatsLeft()) + "\n" ;
 		return header;
 	}

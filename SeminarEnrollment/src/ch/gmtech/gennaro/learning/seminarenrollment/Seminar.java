@@ -4,15 +4,13 @@ import java.util.Date;
 
 
 public class Seminar implements Seminar_Interface {
-	private String seminarName, description, location;
-	private Date courseStartDate;
+	private Course course;
+	private String location;
 	private static ArrayList<String> studentList;
 	private static int seats;
 	
-	public Seminar (Course course, String plocation ){
-		seminarName = course.getName();
-		description = course.getDescription();
-		courseStartDate = course.getStartDate();
+	public Seminar (Course pcourse, String plocation ){
+		course = pcourse;
 		location = plocation;
 		seats = course.getNumber();
 		studentList = new ArrayList<String>();		
@@ -33,29 +31,20 @@ public class Seminar implements Seminar_Interface {
 		if (studentList.contains(pstudent.getInfo()))
 		{
 			studentList.remove(pstudent.getInfo());
-		System.out.println("Disiscrizione di "+pstudent.getInfo() + " per il corso di " + getName() + " avvenuta con successo!");
+		System.out.println("Disiscrizione di "+pstudent.getInfo() + " per il corso di " + course.getName() + " avvenuta con successo!");
 		seats = seats+1;
 		}
 		else{
-		System.out.println("Disiscrizione di "+pstudent.getInfo() + " NON POSSIBILE in quanto non risulta essere iscritto/a al corso " + getName() );
+		System.out.println("Disiscrizione di "+pstudent.getInfo() + " NON POSSIBILE in quanto non risulta essere iscritto/a al corso " + course.getName() );
 		}
 	}
 	
-	@Override
-	public String getName() {
-		return seminarName;
+	
+	public Course getCourse() {
+		return course;
 	}
 
-	@Override
-	public String getDescrition() {
-		return description;
-	}
-
-	@Override
-	public String getLocation() {
-		return location;
-	}
-
+	
 	@Override
 	public int getSeatsLeft() {
 		return seats;
@@ -65,11 +54,12 @@ public class Seminar implements Seminar_Interface {
 	public ArrayList<String> getStudentList() {		
 		return studentList;
 	}
-	
-	public Date getStartDate(){
-		return courseStartDate;
+
+	@Override
+	public String getLocation() {
+		return location;
 	}
 	
-		
+	
 
 }

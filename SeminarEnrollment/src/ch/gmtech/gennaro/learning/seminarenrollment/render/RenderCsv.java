@@ -13,9 +13,9 @@ public class RenderCsv extends RenderSeminarAbstract {
 
 	public String renderHeader(){
 			String header = "";
-			header += super.getSeminar().getName() + ";" ;
-			header += super.getSeminar().getDescrition() + ";" ;
-			header += super.getSeminar().getStartDate().toString() + ";" ;			
+			header += super.getSeminar().getCourse().getName() + ";" ;
+			header += super.getSeminar().getCourse().getDescription() + ";" ;
+			header += super.getSeminar().getCourse().getStartDate().toString() + ";" ;			
 			header += super.getSeminar().getLocation() + ";" ;
 			header += String.valueOf(super.getSeminar().getSeatsLeft()) + "\n";
 			return header;

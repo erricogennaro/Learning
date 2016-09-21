@@ -25,7 +25,7 @@ public class RenderHtml extends RenderSeminarAbstract {
 		String header = "";
 		header += createHtmlOpenTag("html");
 		header += createHtmlOpenTag("head");
-		header += "\t" + createHtmlOpenTagContentClosedTag("title" , super.getSeminar().getName() );
+		header += "\t" + createHtmlOpenTagContentClosedTag("title" , super.getSeminar().getCourse().getName() );
 		header += createHtmlClosedTag("head");
 		return header;
 		
@@ -35,11 +35,11 @@ public class RenderHtml extends RenderSeminarAbstract {
 		String body = "";
 		body += createHtmlOpenTag("body");
 		
-		body += "\t" +createHtmlOpenTagContentClosedTag("div",super.getSeminar().getName() );
+		body += "\t" +createHtmlOpenTagContentClosedTag("div",super.getSeminar().getCourse().getName() );
 		body += "\t" +createHtmlOpenTag("ul");
-		body += "\t" +"\t" +createHtmlOpenTagContentClosedTag("li",super.getSeminar().getDescrition() );
+		body += "\t" +"\t" +createHtmlOpenTagContentClosedTag("li",super.getSeminar().getCourse().getDescription() );
 		body += "\t" +"\t" +createHtmlOpenTagContentClosedTag("li",super.getSeminar().getLocation() );
-		body += "\t" +"\t" +createHtmlOpenTagContentClosedTag("li",super.getSeminar().getStartDate().toString() );		
+		body += "\t" +"\t" +createHtmlOpenTagContentClosedTag("li",super.getSeminar().getCourse().getStartDate().toString() );		
 		body += "\t" +"\t" +createHtmlOpenTagContentClosedTag("li", String.valueOf(super.getSeminar().getSeatsLeft()));
 		body += "\t" +createHtmlClosedTag("ul");
 		

@@ -21,15 +21,15 @@ public class MAIN {
         	 System.out.println("Lista partecipanti Seminario: " + iter.next());
          }         
          
-         removeEnrollment(seminario1);
+                  removeEnrollment(seminario1);
                  
          RenderSeminarAbstract render = new RenderSeminarAbstract(seminario1) {};
          RenderSeminarAbstract renderHtml = new RenderHtml(seminario1);
          RenderSeminarAbstract renderCSV = new RenderCsv(seminario1);
              
-         render.print("/home/dev/Desktop/"+seminario1.getName()+".txt");
-         renderCSV.print("/home/dev/Desktop/"+seminario1.getName()+".csv");
-         renderHtml.print("/home/dev/Desktop/"+seminario1.getName()+".html");
+         render.print("/home/dev/Desktop/"+seminario1.getCourse().getName()+".txt");
+         renderCSV.print("/home/dev/Desktop/"+seminario1.getCourse().getName()+".csv");
+         renderHtml.print("/home/dev/Desktop/"+seminario1.getCourse().getName()+".html");
 
          
 
@@ -42,10 +42,10 @@ public class MAIN {
 		 Date date = new Date(2016, 3, 15, 8, 0);
 		
 		 Seminar seminario1 = new Seminar(new Course("JAVA", 5, "Java for dummies", date), "Manno" );
-		 System.out.println("Nome Seminario: " + seminario1.getName());
-         System.out.println("Descrizione Seminario: " + seminario1.getDescrition());
+		 System.out.println("Nome Seminario: " + seminario1.getCourse().getName());
+         System.out.println("Descrizione Seminario: " + seminario1.getCourse().getDescription());
          System.out.println("Location Seminario: " + seminario1.getLocation());
-         System.out.println("Location Seminario: " + seminario1.getStartDate().toString());
+         System.out.println("Location Seminario: " + seminario1.getCourse().getStartDate().toString());
          System.out.println("Posti disponibili Seminario: " + seminario1.getSeatsLeft());
 		return seminario1;
 	}
