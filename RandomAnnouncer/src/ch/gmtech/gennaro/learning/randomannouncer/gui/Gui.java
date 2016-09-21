@@ -1,4 +1,8 @@
+package ch.gmtech.gennaro.learning.randomannouncer.gui;
 import javax.swing.*;
+
+import ch.gmtech.gennaro.learning.randomannouncer.RandomValue;
+import ch.gmtech.gennaro.learning.randomannouncer.util.ReadFile;
 
 import java.awt.*;
 import java.awt.event.*;

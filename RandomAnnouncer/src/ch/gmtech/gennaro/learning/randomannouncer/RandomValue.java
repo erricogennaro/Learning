@@ -5,9 +5,9 @@ import java.util.Random;
 public class RandomValue {
 	private int value;
  
-	public RandomValue(int persons){
+	public RandomValue(int pvalue){
 	Random rand = new Random(); 
-	value = rand.nextInt(persons);
+	value = rand.nextInt(pvalue);
 	}
 	
 	public int getValue(){

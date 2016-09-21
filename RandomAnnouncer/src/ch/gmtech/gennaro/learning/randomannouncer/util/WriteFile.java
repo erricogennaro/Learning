@@ -1,4 +1,4 @@
-package ch.gmtech.gennaro.learning.randomannouncer;
+package ch.gmtech.gennaro.learning.randomannouncer.util;
 
 import java.io.*;
 import java.util.logging.Level;

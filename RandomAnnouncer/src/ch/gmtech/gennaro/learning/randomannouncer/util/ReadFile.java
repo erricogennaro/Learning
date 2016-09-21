@@ -1,4 +1,4 @@
-package ch.gmtech.gennaro.learning.randomannouncer;
+package ch.gmtech.gennaro.learning.randomannouncer.util;
 import java.io.BufferedInputStream;
 import java.io.DataInputStream;
 import java.io.File;

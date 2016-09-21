@@ -1,9 +1,11 @@
-package ch.gmtech.gennaro.learning.randomannouncer;
+package ch.gmtech.gennaro.learning.randomannouncer.gui;
 
 import java.io.File;
 
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+
+import ch.gmtech.gennaro.learning.randomannouncer.util.WriteFile;
 
 /**
  *
@@ -27,8 +29,6 @@ public class MyJFileChooser {
     	  
         File fileName = fileChooser.getSelectedFile();
         String filen = fileName.toString();
-  
-        //ReadFile openedFile = new ReadFile(filen);
 
         fileOpened = filen;
 
@@ -60,7 +60,7 @@ public class MyJFileChooser {
            int dialogResult = JOptionPane.showConfirmDialog (null, "Il File esiste già. Vuoi sovrascriverlo?","Warning",JOptionPane.YES_OPTION);
            
            if (dialogResult == JOptionPane.OK_OPTION){
-           int dialogButton = JOptionPane.YES_NO_OPTION;
+           
            if ( dialogResult == JOptionPane.YES_OPTION){
         	   fileWrite.DeleteFile(filen);
            }
