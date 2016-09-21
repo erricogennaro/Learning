@@ -1,7 +1,7 @@
 package ch.gmtech.gennaro.learning.seminarenrollment;
 import java.util.Iterator;
 
-import ch.gmtech.gennaro.learning.seminarenrollment.render.RenderAbstract;
+import ch.gmtech.gennaro.learning.seminarenrollment.render.RenderSeminarAbstract;
 import ch.gmtech.gennaro.learning.seminarenrollment.render.RenderCsv;
 import ch.gmtech.gennaro.learning.seminarenrollment.render.RenderHtml;
 
@@ -22,14 +22,15 @@ public class MAIN {
          
          removeEnrollment(seminario1);
                  
-         RenderAbstract render = new RenderAbstract(seminario1);
-         RenderAbstract renderHtml = new RenderHtml(seminario1);
-         RenderAbstract renderCSV = new RenderCsv(seminario1);
+         RenderSeminarAbstract render = new RenderSeminarAbstract(seminario1) {};
+         RenderSeminarAbstract renderHtml = new RenderHtml(seminario1);
+         RenderSeminarAbstract renderCSV = new RenderCsv(seminario1);
              
          render.print("/home/dev/Desktop/"+seminario1.getName()+".txt");
-         renderHtml.print("/home/dev/Desktop/"+seminario1.getName()+".csv");
-         renderCSV.print("/home/dev/Desktop/"+seminario1.getName()+".html");
-          
+         renderCSV.print("/home/dev/Desktop/"+seminario1.getName()+".csv");
+         renderHtml.print("/home/dev/Desktop/"+seminario1.getName()+".html");
+
+         
 
 	 }
 

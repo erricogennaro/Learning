@@ -4,7 +4,7 @@ import java.util.Iterator;
 
 import ch.gmtech.gennaro.learning.seminarenrollment.Seminar;
 
-public class RenderCsv extends RenderAbstract {
+public class RenderCsv extends RenderSeminarAbstract {
 		
 		public RenderCsv(Seminar pseminar) {
 		super(pseminar);

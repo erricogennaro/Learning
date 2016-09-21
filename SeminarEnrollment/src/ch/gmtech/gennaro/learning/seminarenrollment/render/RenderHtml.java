@@ -4,7 +4,7 @@ import java.util.Iterator;
 
 import ch.gmtech.gennaro.learning.seminarenrollment.Seminar;
 
-public class RenderHtml extends RenderAbstract {
+public class RenderHtml extends RenderSeminarAbstract {
 		
 		public RenderHtml(Seminar pseminar) {
 			super(pseminar);	

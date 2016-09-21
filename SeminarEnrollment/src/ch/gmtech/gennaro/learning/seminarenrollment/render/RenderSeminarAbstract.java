@@ -6,10 +6,10 @@ import java.util.Iterator;
 
 import ch.gmtech.gennaro.learning.seminarenrollment.Seminar;
 
-public class RenderAbstract implements Render_Interface {
+public abstract class RenderSeminarAbstract implements Render_Interface {
 	Seminar seminar;
 	
-	public RenderAbstract (Seminar pseminar){
+	public RenderSeminarAbstract (Seminar pseminar){
 		seminar = pseminar;
 	}
 	
