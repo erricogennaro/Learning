@@ -1,6 +1,5 @@
 package ch.gmtech.gennaro.learning.seminarenrollment;
 import java.util.ArrayList;
-import java.util.Date;
 
 
 public class Seminar implements Seminar_Interface {
