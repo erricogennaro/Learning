@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.util.Iterator;
 
 import ch.gmtech.gennaro.learning.seminarenrollment.Seminar;
-import ch.gmtech.gennaro.learning.seminarenrollment.WriteFile;
 
 public class RenderAbstract implements Render_Interface {
 	Seminar seminar;

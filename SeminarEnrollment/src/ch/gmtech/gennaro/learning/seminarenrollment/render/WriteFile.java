@@ -1,4 +1,4 @@
-package ch.gmtech.gennaro.learning.seminarenrollment;
+package ch.gmtech.gennaro.learning.seminarenrollment.render;
 
 import java.io.*;
 
