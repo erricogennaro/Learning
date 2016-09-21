@@ -26,16 +26,11 @@ public class WriteFile {
 
     public void WriteInAppendMode(String path, String append) {
 
-    //	Writer writer = null;
     	try {
     	FileWriter fw = new FileWriter(path,true); //the true will append the new data
-  	
-    	   String filename= "MyFile.txt";
+  	    	   
     	   fw.write(append);//appends the string to the file
     	   fw.close();
- //   	try {
-//    	    writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path), "utf-8"));
-//    	    writer.write(append);
     	    
     	} catch (IOException ex) {
     	  // report
