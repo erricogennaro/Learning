@@ -1,7 +1,6 @@
 package ch.gmtech.gennaro.learning.seminarenrollment.render;
 
 import java.util.Iterator;
-
 import ch.gmtech.gennaro.learning.seminarenrollment.Seminar;
 
 public class RenderHtml extends RenderSeminarAbstract {
@@ -40,6 +39,7 @@ public class RenderHtml extends RenderSeminarAbstract {
 		body += "\t" +createHtmlOpenTag("ul");
 		body += "\t" +"\t" +createHtmlOpenTagContentClosedTag("li",super.getSeminar().getDescrition() );
 		body += "\t" +"\t" +createHtmlOpenTagContentClosedTag("li",super.getSeminar().getLocation() );
+		body += "\t" +"\t" +createHtmlOpenTagContentClosedTag("li",super.getSeminar().getStartDate().toString() );		
 		body += "\t" +"\t" +createHtmlOpenTagContentClosedTag("li", String.valueOf(super.getSeminar().getSeatsLeft()));
 		body += "\t" +createHtmlClosedTag("ul");
 		

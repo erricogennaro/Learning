@@ -2,6 +2,7 @@ package ch.gmtech.gennaro.learning.seminarenrollment;
 
 import static org.junit.Assert.*;
 
+import java.util.Date;
 import java.util.Iterator;
 
 import org.junit.Before;
@@ -13,7 +14,7 @@ public class SEMINARTest {
 	
 	@Before
 	public void testSEMINAR() {
-	 seminario1 = new Seminar(new Course("JAVA", 5, "Java for dummies"), "Manno");
+	 seminario1 = new Seminar(new Course("JAVA", 5, "Java for dummies", new Date(2016, 3, 15, 8, 0, 0)), "Manno");
 	}
 
 	@Test

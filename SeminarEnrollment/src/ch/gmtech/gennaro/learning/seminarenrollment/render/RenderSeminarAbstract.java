@@ -19,6 +19,7 @@ public abstract class RenderSeminarAbstract implements Render_Interface {
 		header += "Nome del Seminario: " + seminar.getName() + "\n" ;
 		header += "Descrizione: " + seminar.getDescrition() + "\n" ;
 		header += "Luogo: " + seminar.getLocation() + "\n" ;
+		header += "Data inizio: " + seminar.getStartDate().toString() + "\n" ;
 		header += "Posti rimanenti: " + String.valueOf(seminar.getSeatsLeft()) + "\n" ;
 		return header;
 	}

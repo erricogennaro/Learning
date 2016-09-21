@@ -1,4 +1,5 @@
 package ch.gmtech.gennaro.learning.seminarenrollment;
+import java.util.Date;
 import java.util.Iterator;
 
 import ch.gmtech.gennaro.learning.seminarenrollment.render.RenderSeminarAbstract;
@@ -38,11 +39,13 @@ public class MAIN {
 	 
 
 	private static Seminar addCourseToSeminar() {
+		 Date date = new Date(2016, 3, 15, 8, 0);
 		
-		 Seminar seminario1 = new Seminar(new Course("JAVA", 5, "Java for dummies"), "Manno");
+		 Seminar seminario1 = new Seminar(new Course("JAVA", 5, "Java for dummies", date), "Manno" );
 		 System.out.println("Nome Seminario: " + seminario1.getName());
          System.out.println("Descrizione Seminario: " + seminario1.getDescrition());
          System.out.println("Location Seminario: " + seminario1.getLocation());
+         System.out.println("Location Seminario: " + seminario1.getStartDate().toString());
          System.out.println("Posti disponibili Seminario: " + seminario1.getSeatsLeft());
 		return seminario1;
 	}

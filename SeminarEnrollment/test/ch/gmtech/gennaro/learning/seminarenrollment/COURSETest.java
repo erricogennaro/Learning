@@ -2,6 +2,8 @@ package ch.gmtech.gennaro.learning.seminarenrollment;
 
 import static org.junit.Assert.*;
 
+import java.util.Date;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,7 +13,7 @@ public class COURSETest {
 	
 	 @Before
 	public void testCOURSE() {		
-		course = new Course("pippo", 4, "java per dummies");		
+		course = new Course("pippo", 4, "java per dummies", new Date(2016, 3, 15, 8, 0, 0));		
 		
 	}
 

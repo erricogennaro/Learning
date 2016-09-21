@@ -1,16 +1,19 @@
 package ch.gmtech.gennaro.learning.seminarenrollment;
 import java.util.ArrayList;
+import java.util.Date;
 
 
 public class Seminar implements Seminar_Interface {
 	private String seminarName, description, location;
+	private Date courseStartDate;
 	private static ArrayList<String> studentList;
 	private static int seats;
 	
 	public Seminar (Course course, String plocation ){
 		seminarName = course.getName();
 		description = course.getDescription();
-		location = plocation;	
+		courseStartDate = course.getStartDate();
+		location = plocation;
 		seats = course.getNumber();
 		studentList = new ArrayList<String>();		
 	}
@@ -40,32 +43,31 @@ public class Seminar implements Seminar_Interface {
 	
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
 		return seminarName;
 	}
 
 	@Override
 	public String getDescrition() {
-		
 		return description;
 	}
 
 	@Override
 	public String getLocation() {
-		
 		return location;
 	}
 
 	@Override
 	public int getSeatsLeft() {
-			
 		return seats;
 	}
 
 	@Override
 	public ArrayList<String> getStudentList() {		
 		return studentList;
-				
+	}
+	
+	public Date getStartDate(){
+		return courseStartDate;
 	}
 	
 		
