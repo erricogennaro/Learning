@@ -26,11 +26,10 @@ public class MAIN {
          RenderAbstract renderHtml = new RenderHtml(seminario1);
          RenderAbstract renderCSV = new RenderCsv(seminario1);
              
-         render.render("/home/dev/Desktop/"+seminario1.getName()+".txt", render);
-         renderHtml.render("/home/dev/Desktop/"+seminario1.getName()+".csv", renderCSV);
-         renderCSV.render("/home/dev/Desktop/"+seminario1.getName()+".html", renderHtml);
-         
-         
+         render.print("/home/dev/Desktop/"+seminario1.getName()+".txt");
+         renderHtml.print("/home/dev/Desktop/"+seminario1.getName()+".csv");
+         renderCSV.print("/home/dev/Desktop/"+seminario1.getName()+".html");
+          
 
 	 }
 

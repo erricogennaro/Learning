@@ -42,7 +42,7 @@ public class RenderAbstract implements Render_Interface {
 		return footer;
 	}
 
-	public void render(String path, Render_Interface render) {
+	public void print(String path) {
 				File f = new File(path);
 		         try {
 					f.createNewFile();
@@ -50,9 +50,9 @@ public class RenderAbstract implements Render_Interface {
 					 if (writefile.CheckIfFileExist(path)){
 						 writefile.DeleteFile(path);
 					 }
-					 writefile.WriteInAppendMode(f.getAbsolutePath(), render.renderHeader());
-					 writefile.WriteInAppendMode(f.getAbsolutePath(), render.renderBody());
-					 writefile.WriteInAppendMode(f.getAbsolutePath(), render.renderFooter());
+					 writefile.WriteInAppendMode(f.getAbsolutePath(), renderHeader());
+					 writefile.WriteInAppendMode(f.getAbsolutePath(), renderBody());
+					 writefile.WriteInAppendMode(f.getAbsolutePath(), renderFooter());
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -60,7 +60,9 @@ public class RenderAbstract implements Render_Interface {
 		    
 		}
 	 
-	
+	public Seminar getSeminar(){
+		return seminar;
+	}
 	
 
 }
