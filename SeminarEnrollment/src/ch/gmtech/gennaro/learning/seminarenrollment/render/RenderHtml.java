@@ -40,7 +40,7 @@ public class RenderHtml extends RenderSeminarAbstract {
 		body += "\t" +"\t" +createHtmlOpenTagContentClosedTag("li",super.getSeminar().getCourse().getDescription() );
 		body += "\t" +"\t" +createHtmlOpenTagContentClosedTag("li",super.getSeminar().getLocation() );
 		body += "\t" +"\t" +createHtmlOpenTagContentClosedTag("li",super.getSeminar().getCourse().getStartDate().toString() );		
-		body += "\t" +"\t" +createHtmlOpenTagContentClosedTag("li", String.valueOf(super.getSeminar().getSeatsLeft()));
+		body += "\t" +"\t" +createHtmlOpenTagContentClosedTag("li","Posti rimanenti: " + String.valueOf(super.getSeminar().getSeatsLeft()));
 		body += "\t" +createHtmlClosedTag("ul");
 		
 		body += "\t" +createHtmlOpenTagContentClosedTag("div","partecipanti:");

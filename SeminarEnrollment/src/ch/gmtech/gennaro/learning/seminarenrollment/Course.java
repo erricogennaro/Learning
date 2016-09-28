@@ -13,7 +13,6 @@ public class Course {
 		description = pdescription;
 		startDate = pstartDate;
 	}
-
 	
 	public String getName() {
 		return name;

@@ -10,7 +10,8 @@ import ch.gmtech.gennaro.learning.seminarenrollment.render.RenderHtml;
 public class MAIN {
 	
 	 public static void main(String[] args) {
-	       
+		 String path = "/home/dev/Desktop/" ;
+		       
 		 Seminar seminario1 = addCourseToSeminar();       
                   
          addEnrollment(seminario1);
@@ -21,15 +22,15 @@ public class MAIN {
         	 System.out.println("Lista partecipanti Seminario: " + iter.next());
          }         
          
-                  removeEnrollment(seminario1);
+        removeEnrollment(seminario1);
                  
          RenderSeminarAbstract render = new RenderSeminarAbstract(seminario1) {};
          RenderSeminarAbstract renderHtml = new RenderHtml(seminario1);
          RenderSeminarAbstract renderCSV = new RenderCsv(seminario1);
-             
-         render.print("/home/dev/Desktop/"+seminario1.getCourse().getName()+".txt");
-         renderCSV.print("/home/dev/Desktop/"+seminario1.getCourse().getName()+".csv");
-         renderHtml.print("/home/dev/Desktop/"+seminario1.getCourse().getName()+".html");
+         
+         render.print(path+seminario1.getCourse().getName()+".txt");
+         renderCSV.print(path+seminario1.getCourse().getName()+".csv");
+         renderHtml.print(path+seminario1.getCourse().getName()+".html");
 
          
 

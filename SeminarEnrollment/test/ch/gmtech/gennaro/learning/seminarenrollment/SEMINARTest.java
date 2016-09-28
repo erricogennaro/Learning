@@ -24,11 +24,31 @@ public class SEMINARTest {
         Iterator iter = seminario1.getStudentList().listIterator();
         
         while (iter.hasNext()){
-       	 
-       	 if (!iter.next().toString().equalsIgnoreCase("Diego Maradona")){
+       	 String value = iter.next().toString();
+       	       	 
+       	 if (value.equalsIgnoreCase("Diego Maradona")){
        		 assertTrue(true);
-       	 }
-        }        
+       	 } else
+       		assertTrue(false);
+        }
 	}
-		
+	
+	@Test
+	public void testRemoveEnrollment() {
+	
+	seminario1.addEnrollment((new Student("Diego", "Maradona")));
+	seminario1.addEnrollment((new Student("Antonio", "Conte")));
+    seminario1.removeEnrollment( (new Student("Diego", "Maradona")));
+    
+    Iterator iter = seminario1.getStudentList().listIterator();
+    
+    while (iter.hasNext()){
+    	String value = iter.next().toString();
+    	
+      	 if (value.equalsIgnoreCase("Diego Maradona")){
+      		 assertTrue(false);      		 
+      	 }
+       }
+    
+	}	
 }
