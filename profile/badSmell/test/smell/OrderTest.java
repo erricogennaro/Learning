@@ -62,14 +62,12 @@ public class OrderTest {
 							"Total = 60"+"\n"+
 							"End Line Item"+"\n"+
 							"Order total = 70"+"\n";
-		//System.out.println(out.toString());
+		
 		assertEquals(expected, out.toString());
 	}
 
 	@Test
 	public void testPrintAndGetTotal() {
-		StringWriter out = new StringWriter();
-		order.writeOrder(new PrintWriter(out));
 		
 		assertEquals(70, order.printAndGetTotal(items, new PrintWriter(System.out)));
 		

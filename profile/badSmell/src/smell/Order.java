@@ -30,7 +30,7 @@ public class Order {
 	public int printAndGetTotal(Vector<smell.Item> vector, PrintWriter pw) {
 
 		// create an iterator for the vector
-        Iterator iter = items.iterator();
+        Iterator<Item> iter = items.iterator();
         Item item;
         // set total to zero
         int total = 0;
