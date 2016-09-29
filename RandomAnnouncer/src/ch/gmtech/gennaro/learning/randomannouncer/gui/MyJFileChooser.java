@@ -19,7 +19,7 @@ public class MyJFileChooser {
         this.fileOpened = fileOpened;
     }//end MyJFileChooser constructor
 
-    public boolean loadFileWithFilechooser(Gui gui) {
+    public boolean loadFileWithFilechooser(CallerNameSpeaker gui) {
         //  System.out.println(textArea.getText());
         JFileChooser fileChooser = new JFileChooser(fileOpened);
         fileChooser.setFileSelectionMode(JFileChooser.APPROVE_OPTION);
