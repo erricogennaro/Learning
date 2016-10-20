@@ -21,7 +21,7 @@ public class Gamma {
 		importantValue1 = (inputVal * quantity) + _account.delta();
 		importantValue2 = (inputVal * yearToDate) + 100;
 		importantThing();
-		int importantValue3 = importantValue2 * 7;
+		importantValue3 = importantValue2 * 7;
 		// and so on.
 		return importantValue3 - 2 * importantValue1;
 	}

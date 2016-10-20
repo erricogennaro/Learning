@@ -4,13 +4,13 @@ import java.sql.Date;
 
 public class Charge {
 	
-	public Date SUMMER_START = new Date(2016, 6, 21);
-	public Date SUMMER_END = new Date(2016, 9, 21); 
-	public Date date;
-	public int charge, quantity;
-	public int summerRate = 15;
-	public int winterRate = 25;
-	public int winterServiceCharge = 10;
+	private Date SUMMER_START = new Date(2016, 6, 21);
+	private Date SUMMER_END = new Date(2016, 9, 21); 
+	private Date date;
+	private int quantity;
+	private int summerRate = 15;
+	private int winterRate = 25;
+	private int winterServiceCharge = 10;
 	
 	public Charge (int pquantity, Date pdate) {
 		date = pdate;
@@ -40,12 +40,12 @@ public class Charge {
 	}
 	
 	private int winterCharge (){
-		return charge = quantity * winterRate + winterServiceCharge;
+		return quantity * winterRate + winterServiceCharge;
 		
 	}
 	
 	private int summerCharge (){
-		return charge = quantity * summerRate;
+		return quantity * summerRate;
 		
 	}
 	

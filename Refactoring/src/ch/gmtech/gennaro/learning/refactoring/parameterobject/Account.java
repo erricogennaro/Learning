@@ -49,6 +49,3 @@ public class Account {
 	}
 }
 
-/*
- * client code... double flow = anAccount.getFlowBetween(startDate, endDate);
- */
